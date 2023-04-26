@@ -1,1 +1,1 @@
-# trab-2-visao
+# Calibrador de câmera
