@@ -24,15 +24,17 @@ for fname in images:
     
     # If found, add object points, image points (after refining them)
     if ret == True:
-        print("oi")
+        print("-")
         objpoints.append(objp)
         corners2 = cv.cornerSubPix(gray,corners, (11,11), (-1,-1), criteria)
         imgpoints.append(corners2)
         # Draw and display the corners
         cv.drawChessboardCorners(img, (5,5), corners2, ret)
-        pl.figure(figsize=(10, 6))
-        pl.imshow(img)
-        pl.show()
+        # pl.figure(figsize=(10, 6))
+        # pl.imshow(img)
+        # pl.show()
+        # cv.imshow('img', img)
+        # cv.waitKey(0)
 
 cv.destroyAllWindows()
 
